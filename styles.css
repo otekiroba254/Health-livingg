@@ -1,0 +1,121 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+    position: relative; /* Necessary for dropdown positioning */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #111;
+}
+
+/* Dropdown menu styling */
+.navbar li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Display the dropdown when hovering */
+.navbar li:hover .dropdown-content {
+    display: block;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+.main-image {
+    width: 80%; /* Change this value to your desired size */
+    height: auto;
+    margin: 20px 0;
+    display: block; /* Centers the image in the container */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.resource-image {
+    max-width: 48%;
+    height: auto;
+    margin: 10px 1%;
+}
+
+.first-section {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #4CAF50; /* Green color for section titles */
+    border-bottom: 2px solid #4CAF50; /* Underline for emphasis */
+    padding-bottom: 10px;
+}
+
+.nutrients-section,
+.tips-section,
+.meal-planning-section,
+.myths-section {
+    background-color: #fff8e1; /* Light yellow background */
+    border-left: 5px solid #ff9800; /* Orange left border */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.nutrients-section ul,
+.tips-section ul,
+.meal-planning-section ul,
+.myths-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section-image {
+    width: 80%; /* Set to 80% of the parent container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image */
+    border-radius: 8px; /* Optional: rounded corners */
+}
